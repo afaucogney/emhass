@@ -9,7 +9,7 @@ retrieve_hass_conf:
   - set_zero_min: True # A special treatment for a minimum value saturation to zero. Values below zero are replaced by nans
   - var_replace_zero: # A list of retrived variables that we would want  to replace nans with zeros
     - 'sensor.power_photovoltaics'
-  - var_interp: # A list of retrived variables that we would want to interpolate nan values using linear interpolation
+  - var_interp: # A list of retrieved variables that we would want to interpolate nan values using linear interpolation
     - 'sensor.power_photovoltaics'
     - 'sensor.power_load_no_var_loads'
   - method_ts_round: 'nearest' # Set the method for timestamp rounding, options are: first, last and nearest
